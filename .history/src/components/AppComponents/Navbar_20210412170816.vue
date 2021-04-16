@@ -1,23 +1,24 @@
 <template>
-  <div>
+  <div display:inline>
     <el-menu
       theme="dark"
       :default-active="activeIndex"
       class="el-menu-demo"
       mode="horizontal"
       @select="handleSelect"
+      align="center"
     >
       <el-menu-item index="1">search</el-menu-item>
-      <el-menu-item index="2">article</el-menu-item>
+      <el-menu-item index="2">Article</el-menu-item>
       <el-submenu index="3">
-        <template slot="title">projects</template>
-        <el-menu-item index="3-1">shiny</el-menu-item>
-        <el-menu-item index="3-2">learnVue</el-menu-item>
-        <el-menu-item index="4-3">otherProject</el-menu-item>
+        <template slot="title">Projects</template>
+        <el-menu-item index="3-1">Shiny</el-menu-item>
+        <el-menu-item index="3-2">LearnVue</el-menu-item>
+        <el-menu-item index="4-3">OtherProject</el-menu-item>
       </el-submenu>
-      <el-menu-item index="4">login</el-menu-item>
-      <el-menu-item index="5">resume</el-menu-item>
-      <el-menu-item index="6">about</el-menu-item>
+      <el-menu-item index="4">Login</el-menu-item>
+      <el-menu-item index="5">Resume</el-menu-item>
+      <el-menu-item index="6">About</el-menu-item>
     </el-menu>
   </div>
 </template>
